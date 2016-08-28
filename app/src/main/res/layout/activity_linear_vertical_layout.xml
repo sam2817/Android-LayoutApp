@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.layoutdemo.layoutapp.LinearVerticalLayoutActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/house"
+        android:onClick="loadMainActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Linear Layout (Vertical)"
+        android:id="@+id/titleLinearVertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLinearVertical"
+        android:layout_above="@+id/btnHome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/layoutLinearVertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 1"
+            android:id="@+id/btnLinearVertical1"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_bright" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 2"
+            android:id="@+id/btnLinearVertical2"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 3"
+            android:id="@+id/btnLinearVertical3"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 4"
+            android:id="@+id/btnLinearVertical4"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_green_dark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 5"
+            android:id="@+id/btnLinearVertical5"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_green_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 6"
+            android:id="@+id/btnLinearVertical6"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_orange_dark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 7"
+            android:id="@+id/btnLinearVertical7"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_orange_light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layer 8"
+            android:id="@+id/btnLinearVertical8"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_purple" />
+
+    </LinearLayout>
+
+</RelativeLayout>
